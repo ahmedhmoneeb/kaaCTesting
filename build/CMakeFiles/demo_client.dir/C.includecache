@@ -17,6 +17,8 @@ time.h
 -
 stdbool.h
 -
+stdlib.h
+-
 kaa/kaa_error.h
 -
 kaa/platform/kaa_client.h

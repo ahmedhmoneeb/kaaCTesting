@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 #include <stdbool.h>
- 
+#include <stdlib.h>
 #include <kaa/kaa_error.h>
 #include <kaa/platform/kaa_client.h>
 #include <kaa/utilities/kaa_log.h>
@@ -25,11 +25,11 @@ void on_notification(void *context, uint64_t *topic_id, kaa_notification_t *noti
     printf("Notification body: %s\n", message->data);
     if(strcmp(message->data, "LED on") == 0)
     {
-        printf("LED is now ON !!\n");
+        system("python GPIOon.py");
     }
     if(strcmp(message->data, "LED off") == 0)
     {
-        printf("LED is now OFF !!\n");
+        system("python GPIOoff.py");;
     }
 }
 void on_topics_received(void *context, kaa_list_t *topics)
