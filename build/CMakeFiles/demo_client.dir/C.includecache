@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/src/main.c
+stdint.h
+-
+stdio.h
+-
+string.h
+-
+time.h
+-
+stdbool.h
+-
+kaa/kaa_error.h
+-
+kaa/platform/kaa_client.h
+-
+kaa/utilities/kaa_log.h
+-
+kaa/kaa_notification_manager.h
+-
+

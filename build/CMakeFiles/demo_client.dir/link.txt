@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=gnu99 -g -Wall -Wextra   CMakeFiles/demo_client.dir/src/main.c.o  -o demo_client  -L/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/build -rdynamic -lkaac -lcrypto -Wl,-rpath,/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/build 
