@@ -23,13 +23,13 @@ void on_notification(void *context, uint64_t *topic_id, kaa_notification_t *noti
     kaa_string_t *message = (kaa_string_t *)notification->message;
     printf("Notification for topic id '%lu' received\n", *topic_id);
     printf("Notification body: %s\n", message->data);
-    if(strcmp(message->data, "LED on") == 0)
+    if(strcmp(message->data, "On") == 0)
     {
-        system("python GPIOon.py");
+        system("python ../GPIOon.py");
     }
-    if(strcmp(message->data, "LED off") == 0)
+    if(strcmp(message->data, "Off") == 0)
     {
-        system("python GPIOoff.py");;
+        system("python ../GPIOoff.py");;
     }
 }
 void on_topics_received(void *context, kaa_list_t *topics)

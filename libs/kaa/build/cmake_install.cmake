@@ -1,4 +1,4 @@
-# Install script for directory: /home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/libs/kaa
+# Install script for directory: /home/pi/kaa/kaaCTesting/libs/kaa
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +33,7 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/kaa" TYPE DIRECTORY FILES "/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/libs/kaa/src/kaa/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/kaa" TYPE DIRECTORY FILES "/home/pi/kaa/kaaCTesting/libs/kaa/src/kaa/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -43,7 +43,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libkaac.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/libs/kaa/build/libkaac.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/pi/kaa/kaaCTesting/libs/kaa/build/libkaac.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libkaac.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libkaac.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -53,7 +53,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/libs/kaa/build/libkaac_s.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pi/kaa/kaaCTesting/libs/kaa/build/libkaac_s.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -62,7 +62,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/libs/kaa/build/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+file(WRITE "/home/pi/kaa/kaaCTesting/libs/kaa/build/${CMAKE_INSTALL_MANIFEST}" "")
+foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
+  file(APPEND "/home/pi/kaa/kaaCTesting/libs/kaa/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+endforeach()

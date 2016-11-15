@@ -1,4 +1,4 @@
-# Install script for directory: /home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c
+# Install script for directory: /home/pi/kaa/kaaCTesting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/build/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+file(WRITE "/home/pi/kaa/kaaCTesting/build/${CMAKE_INSTALL_MANIFEST}" "")
+foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
+  file(APPEND "/home/pi/kaa/kaaCTesting/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+endforeach()

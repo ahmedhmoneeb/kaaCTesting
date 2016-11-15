@@ -1,1 +1,1 @@
-/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingNotification/kaa-first-app2/kaa-first-app/c/build/CMakeFiles/demo_client.dir
+/home/pi/kaa/kaaCTesting/build/CMakeFiles/demo_client.dir
